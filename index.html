@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div exec="
+    let arr = [];
+    state.cats.forEach(cat => arr.push(cat));
+    return arr;
+    "></div>
+    <div exec="console.log(state.count);"></div>
+
+    <input type="text" exec="
+        const elm = document.getElementById('idfk');
+
+        _this.addEventListener('input', (e) => {
+            const target = e.target.value;
+            idfk.innerHTML = target;
+        })
+    " />
+    <div id="idfk"></div>
+    <div exec="_this.innerHTML = state.count"></div>
+    <script src="./reactivity.js"></script>
+</body>
+</html>
