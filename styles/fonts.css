@@ -1,0 +1,54 @@
+/*itc*/
+@font-face {
+    font-family: "avante_garde";
+    src: url('../fonts/itc_avante_garde.otf');
+}
+
+@font-face {
+    font-family: "avante_garde_bold";
+    src: url('../fonts/itc_avante_garde_bold.otf');
+}
+
+/*taxi driver title*/
+@font-face {
+    font-family: "nimbus";
+    src: url('../fonts/NimbusSanConL-Bla.ttf');
+}
+
+@font-face {
+    font-family: "nimbus_bold";
+    src: url('../fonts/nimbus-sans-l_bold.otf');
+}
+
+/*inter*/
+@font-face {
+    font-family: "inter_regular";
+    src: url('../fonts/inter_regular.TTF') format("truetype");
+}
+
+@font-face {
+    font-family: "inter_medium";
+    src: url('../fonts/inter_medium.TTF') format("truetype");
+}
+
+@font-face {
+    font-family: "inter_bold";
+    src: url('../fonts/inter_bold.TTF') format("truetype");
+}
+
+@font-face {
+    font-family: "inter_black";
+    src: url('../fonts/inter_black.TTF') format("truetype");
+}
+
+/*inter ui*/
+@font-face {
+    font-family: "inter_ui";
+    src: url('../fonts/inter_ui.TTF') format("truetype");
+}
+
+/*black letter*/
+@font-face {
+    font-family: "blackletter";
+    src: url('../fonts/blackletter.TTF') format("truetype");
+}

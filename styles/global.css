@@ -1,0 +1,53 @@
+@import url("./fonts.css");
+
+:root {
+    --font-primary-color: "#000000";
+    --global-padding: 0 10vw;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "inter_regular";
+    font-size: 16px;
+    color: var(--font-primary-color);
+    overflow-x: hidden;
+}
+
+#canvas {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    user-select: none;
+    pointer-events: none;
+}
+
+ul, a {
+    list-style-type: none;
+    text-decoration: none;
+    color: var(--font-primary-color);
+}
+
+#grain {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    background-image: url("../images/grain.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0 0 20px 20px white inset;
+    mix-blend-mode: soft-light;
+    opacity: 0.25;
+    user-select: none;
+    pointer-events: none;
+}

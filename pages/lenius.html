@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/fonts.css">
+    <link rel="stylesheet" href="../styles/global.css">
+    <link rel="stylesheet" href="../styles/lenius/main.css">
+</head>
+<body>
+
+    <article class="root">
+
+        <section class="m-header">
+            <a class="toOtherPage" href="../index.html">$-- go back</a>
+        </section>
+
+        <section onclick="closed(1)" class="container c1" exec="
+            const els = [];
+
+            for (let i = 1; i <= 11; i++) {
+                const element = document.createElement('img');
+                element.src = `../images/lenius/01/${i < 10 ? '0' + i : i}.png`;
+                els.push(element);
+            }
+
+            _this.append(...els);
+        "></section>
+        <section onclick="closed(2)" class="container c2" exec="
+        const els = [];
+
+        for (let i = 1; i <= 11; i++) {
+            const element = document.createElement('img');
+            element.src = `../images/lenius/02/${i < 10 ? '0' + i : i}.png`;
+            els.push(element);
+        }
+
+        _this.append(...els);
+    "></section>
+        <section class="shown-logos">
+            <img onclick="closed(1)" src="../images/lenius/others/logo_1.png" alt="back of business card" />
+            <img onclick="closed(2)" src="../images/lenius/others/logo_2.png" alt="back of business card" />
+        </section>
+        <section class="m-images">
+            <div class="mi-wrapper" style="background-image: url('../images/lenius/others/Business-Cards-Identity-Mockup.jpg');"></div>
+            <div class="m-brand">
+                <blockquote class="mb-block">
+                    <h2>Lenius</h2>
+                    <p>“Lenius is currently run by Carsten Jonstrup, and tackles the problem of the high prices it costs to become a member of apps such as just-eat or wolt. Normally it costs a lot of money monthly to be part of such apps, but with Lenius you can get your own customized website that has an installed menu card and ordering system that you can customize.”</p>
+                    <img src="../images/emotes/Wondering.png" alt="me explaining" />
+                </blockquote>
+                <blockquote class="mb-list">
+                    <ul class="mbl">
+                        <li class="mbl-title">Brand Attributes:</li>
+                        <li class="mbl-item">
+                            <p class="mbli-title">Tip-top Condition</p>
+                            <p class="mbli-text">Believes in quality and providing the best possible experience for the client, and their customers in mind.<br />
+                                My client's customer is my customer.</p>
+                        </li>
+                        <li class="mbl-item">
+                            <p class="mbli-title">25/7 Support</p>
+                            <p class="mbli-text">Even though Lenius is a one-man company as of now, the support is high, and it‘s easy to get in contact with Carsten, as his customer support is almost always open.</p>
+                        </li>
+                        <li class="mbl-item">
+                            <p class="mbli-title">Adapt</p>
+                            <p class="mbli-text">Adapting to new trends or markets is Lenius’ job, and to inform their clients about such changes in the market, to help them curate more customers.</p>
+                        </li>
+                    </ul>
+                </blockquote>
+            </div>
+            <div class="mi-wrapper" style="background-image: url('../images/lenius/others/Product-Branding-Elements-Packaging-Mockup.jpg');"></div>
+            <div class="mi-wrapper" style="background-image: url('../images/lenius/others/nevergg-tRz22bXoEcw-unsplash.jpg');"></div>
+            <div class="m-brand">
+                <blockquote class="mb-block links">
+                    <h2>Super Duper Deduction Skills *ahem*</h2>
+                    <div>
+                        <a href="https://docs.google.com/document/d/10lLk52PfCvNdHEvi0g73TWGYPlCQxMoE2qVmfOWUhKg/edit?usp=sharing" target="_blank">Brand Analysis</a>
+                        <a href="https://docs.google.com/document/d/1LGZgOhEE7V-WnFCDVbsE4z1FK68f3l9WxsV801u0XSI/edit?usp=sharing" target="_blank">Competitive Brand Analysis</a>
+                        <a href="https://docs.google.com/document/d/1wYF6oIeTwgm0iOMU8FXkj_ltLVmbuy1pPSy4gmudQ90/edit?usp=sharing" target="_blank">Competitive Brand Analysis</a>
+                    </div>
+                </blockquote>
+            </div>
+            <div class="mi-wrapper" style="background-image: url('../images/lenius/others/Falling-BusinessCards-Identity-Mockup.jpg');"></div>
+        </section>
+
+        <section class="model hidden">
+            <div class="model-content">
+            </div>
+    
+            <section class="model-btn">
+                <div class="btn prev" onclick="indent(-1)">prev</div>
+                <div class="btn close" onclick="closed()">close</div>
+                <div class="btn next" onclick="indent(1)">next</div>
+            </section>
+        </section>
+        
+        <section class="cap-crazy">
+            <img exec="
+                let index = 0;
+                let active = false;
+                let timeout;
+                let frames = 8;
+                _this.addEventListener('click', (e) => {
+                    active = !active;
+                    
+                    clearInterval(timeout);
+
+                    if (active) {
+                        timeout = setInterval(() => { 
+                            if (index >= 26) { 
+                                setTimeout(() => {
+                                    index = 0;
+                                }, 1000);
+                            } else {
+                                _this.src = `../images/contact/Artboard ${index}.png`; 
+                                index++; 
+                            }
+                        }, 1000/frames);
+                    }
+                })
+            " src="../images/contact/Artboard 0.png" alt="sequence of images showing contact me">
+        </section>
+    </article>
+
+    <div id="grain"></div>
+
+    <script src="../scripts/reactivity.js"></script>
+    <script src="../scripts/slider.js"></script>
+    <script src="../scripts/routing.js"></script>
+</body>
+</html>

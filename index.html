@@ -5,15 +5,229 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./styles/fonts.css">
+    <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="./styles/home/main.css">
+    <link rel="stylesheet" href="./styles/home/parallax.css">
+    <link rel="stylesheet" href="./styles/home/after-parallax.css">
 </head>
 <body>
-    <div exec="
+    <main id="main">
+        <section class="grid grid-hidden">
+            <div class="grid-button" exec="_this.onclick = () => {
+                document.querySelector('.grid').classList.toggle('grid-hidden');
+            }">Close</div>
+
+            <section class="grid-container">
+                <div><img src="./images/random_shiss/1.png" alt="random shiss" /></div>
+                <div><img src="./images/random_shiss/2.png" alt="random shiss" /></div>
+                <div><img src="./images/random_shiss/3.png" alt="random shiss" /></div>
+                <div><div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/720350942?h=8423e47cf7&badge=0&autopause=0&player_id=0&app_id=58479/embed" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen frameborder="0" style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe></div></div>
+                <div><img src="./images/random_shiss/25.png" alt="random shiss" /></div>
+                <div><div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/714016113?h=9c6336fa7e&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Logo.mov"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script></div>
+                <div><img src="./images/random_shiss/19.png" alt="random shiss" /></div>
+                <div><img src="./images/random_shiss/21.png" alt="random shiss" /></div>
+                <div><img src="./images/random_shiss/26.png" alt="random shiss" /></div>
+                <div><div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/738815376?h=fb9b00ab14&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="no not srsly."></iframe></div><script src="https://player.vimeo.com/api/player.js"></script></div>
+                <div><img src="./images/random_shiss/22.png" alt="random shiss" /></div>
+                <div><img src="./images/random_shiss/4.png" alt="random shiss" /></div>
+                <div><img src="./images/random_shiss/5.png" alt="random shiss" /></div>
+                <div><img src="./images/random_shiss/6.png" alt="random shiss" /></div>
+                <div><img src="./images/random_shiss/7.png" alt="random shiss" /></div>
+                <div><img src="./images/random_shiss/27.png" alt="random shiss" /></div>
+                <div><img src="./images/random_shiss/8.png" alt="random shiss" /></div>
+                <div><img src="./images/random_shiss/23.png" alt="random shiss" /></div>
+                <div><img src="./images/random_shiss/14.png" alt="random shiss" /></div>
+                <div><img src="./images/random_shiss/9.png" alt="random shiss" /></div>
+                <div><img src="./images/random_shiss/10.png" alt="random shiss" /></div>
+                <div><img src="./images/random_shiss/28.png" alt="random shiss" /></div>
+                <div><img src="./images/random_shiss/11.png" alt="random shiss" /></div>
+                <div><img src="./images/random_shiss/12.png" alt="random shiss" /></div>
+                <div><div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/664733823?h=26bbdb6874&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="workshop_final"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script></div>
+                <div><img src="./images/random_shiss/13.png" alt="random shiss" /></div>
+                <div><img src="./images/random_shiss/18.png" alt="random shiss" /></div>
+                <div><img src="./images/random_shiss/14.png" alt="random shiss" /></div>
+                <div><img src="./images/random_shiss/15.png" alt="random shiss" /></div>
+                <div><img src="./images/random_shiss/16.png" alt="random shiss" /></div>
+                <div><img src="./images/random_shiss/17.png" alt="random shiss" /></div>
+                <div><div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/671599506?h=7a16a4d639&badge=0&autopause=0&player_id=0&app_id=58479/embed" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen frameborder="0" style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe></div></div>
+            </section>
+        </section>
+        
+        <!--Actual Parallax-->
+        <article id="parallax">
+            <!-- Header says: name' sune -->
+            <header class="p-header">
+                <div class="ph-text">
+                    <h2>name'</h2>
+                    <h2>sune</h2>
+                </div>
+            </header>
+
+            <article class="p-gridler">
+                <section class="pg-overview">
+                    <section class="pgo-about">
+                        <h2 class="pgo-title">I was born in 2002.<br />
+                            Yep that's about it.
+                        </h2>
+
+                        <p class="pgo-body">So nothing much happened in my life before 17 (*ahem* except my rare diseases and a lot of other stuff) when I started studying for fun.<br /><br />
+                            
+                            I’m no genius, nor do I have any tricks up my sleeve. I simply like studying (I’m half-Korean, I'm not sure if that halfway explains it to some extent, but anyway!) to get away from everything and enjoy my life, I chose to submerge myself in studying.<br /><br />
+                            
+                            I'm a team player and someone who enjoys the company of others, but I'm an introvert and you'll quickly catch on to that if you ever meet me.<br /><br />
+                            Funnily enough, I'm pretty weak because of my disease but my grandpa taught me to have a strong handshake (this is funny because I can actually barely open a bottle).<br /><br />
+                            
+                            I have a great family and some wonderful friends, and that's about it. I always wish others a good day and ask if they are well. Don't worry you'll get used to it.</p>
+                    </section>
+                </section>
+                <section class="pg-overview">
+                    <section class="pgo-name">
+                        <span>sune quist</span>
+                    </section>
+                    <section class="pgo-me_young">
+                        <img src="./images/me_young_filmroll.png" alt="me as a child" />
+                    </section>
+                    <section class="pgo-time_flies">
+                        <h2>time<br />flies</h2>
+                    </section>
+                </section>
+                <section class="pg-overview">
+                    <section class="pgo-fun_facts">
+                        <div class="pgo-container">
+                            <h2 class="pgo-title">Studying is fun?</h2>
+
+                            <p class="pgo-body">
+                                Only if you enjoy what you do. To me studying is like what partying or being with friends is to others. Of course, I do have friends, and extremely good ones, but that doesn’t mean I stand by what I say.
+                            </p>
+                        </div>
+                        <div class="pgo-container">
+                            <h2 class="pgo-title">
+                                creativity isn’t in my blood, (feat. workflow)
+                            </h2>
+
+                            <p class="pgo-body">
+                                I’ve always loved design, and I still do, but somewhere along the road, I saw that I just wasn’t creative at all, unless it was for someone else’s sake. That’s why I’m a problem solver, not a designer, e.g. when I have had clients I always end up not showing mockups and instead sitting down and giving them recommendations on design and making the changes on the fly as I’m extremely efficient in the adobe apps. But what does that do? Well, it makes the client able to get a grasp of what they want while I guide them and make suggestions on why and how design works. This in turn also makes the client able to clearly express themselves to me in the future about how they want their design to turn out.
+                            </p>
+                        </div>
+                        <!-- <div class="pgo-container fun-facts-me">
+                            <img src="./images/me_photo.png" alt="an image of myself" width="150px" />
+                            <p class="pgo-body">This was taken like 6-7 years ago...<br />
+                                (and you ain’t getting my passport!)</p>
+                        </div> -->
+                    </section>
+                </section>
+            </article>
+
+            <article class="video-player">
+                <p class="pgo-body">Taxi Driver | A lesser version of Dan Perri'</p>
+                <section class="vp-frame">
+                    <iframe src="https://www.youtube-nocookie.com/embed/nVxOHAg7bLU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </section>
+            </article>
+        </article>
+
+        <!--Content After Parallax-->
+        <article id="content-after-parallax">
+            <section class="cap-container">
+                <ul class="capc-list">
+                    <li class="capcl-item">
+                        <a class="capcli-hovered toOtherPage" href="./pages/xbox.html" style="background-image: url('./images/xbox/1.jpg');">
+                            <div class="capclih-wrapper">
+                                <p class="capclih-type">personal testing</p>
+                                <p class="capclih-title">xbox controller</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="capcl-item">
+                        <a class="capcli-hovered toOtherPage" href="./pages/lenius.html" style="background-image: url('./images/lenius/lenius-thumbnail.jpg');">
+                            <div class="capclih-wrapper">
+                                <p class="capclih-type">client work</p>
+                                <p class="capclih-title">Lenius</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="capcl-item">
+                        <a class="capcli-hovered" href="https://www.behance.net/portfolio/editor?project_id=149712001" target="_blank" style="background-image: url('./images/sogl/Animation.jpg');">
+                            <div class="capclih-wrapper">
+                                <p class="capclih-type">personal testing</p>
+                                <p class="capclih-title">sogl</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="capcl-item">
+                        <a class="capcli-hovered toOtherPage" href="./pages/taxi.html" style="background-image: url('./images/video_thumbnail.png');">
+                            <div class="capclih-wrapper">
+                                <p class="capclih-type">in honor of'</p>
+                                <p class="capclih-title">taxi driver</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="capcl-item">
+                        <a class="capcli-hovered" 
+                            exec="
+                                _this.onclick = (e) => {
+                                    e.preventDefault();
+                                    document.querySelector('.grid').classList.toggle('grid-hidden');
+                            }" 
+                            style="background-image: url('./images/random_shiss/9.png');">
+                            <div class="capclih-wrapper">
+                                <p class="capclih-type">left overs</p>
+                                <p class="capclih-title">personal / client</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="cap-contact">
+                <div class="capc-wrapper">
+                    <h2 class="capcw-title">Contact @:</h2>
+                    <a class="capcw-link" href="mailto: sunevinterhoej@gmail.com">sunevinterhoej@gmail.com</a>
+                    <p class="capcw-message">have a wonderful day ◝(ᵔᵕᵔ)◜</p>
+                </div>
+            </section>
+
+            <section class="cap-crazy">
+                <img exec="
+                    let index = 0;
+                    let active = false;
+                    let timeout;
+                    let frames = 8;
+                    _this.addEventListener('click', (e) => {
+                        active = !active;
+
+                        clearInterval(timeout);
+                        
+                        if (active) {
+                            timeout = setInterval(() => { 
+                                if (index >= 26) { 
+                                    setTimeout(() => {
+                                        index = 0;
+                                    }, 1000);
+                                } else {
+                                    _this.src = `./images/contact/Artboard ${index}.png`; 
+                                    index++; 
+                                }
+                            }, 1000/frames);
+                        }
+                    })
+                " src="./images/contact/Artboard 0.png" alt="sequence of images showing contact me">
+            </section>
+        </article>
+    </main>
+
+    <div id="grain"></div>
+
+    <!-- Old Test Code (for reactivity.js) -->
+
+    <!-- <div exec="
     let arr = [];
     state.cats.forEach(cat => arr.push(cat));
     return arr;
-    "></div>
-    <div exec="console.log(state.count);"></div>
-
+    "></div> -->
+    <!-- <div exec="console.log(state.count);"></div> -->
+<!-- 
     <input type="text" exec="
         const elm = document.getElementById('idfk');
 
@@ -22,8 +236,12 @@
             idfk.innerHTML = target;
         })
     " />
-    <div id="idfk"></div>
-    <div exec="_this.innerHTML = state.count"></div>
-    <script src="./reactivity.js"></script>
+    <div id="idfk"></div> -->
+    <!-- <div exec="_this.innerHTML = state.count"></div> -->
+
+    <script src="./scripts/reactivity.js"></script>
+    <script src="./scripts/parallax.js"></script>
+    <script src="./scripts/foldout.js"></script>
+    <script src="./scripts/routing.js"></script>
 </body>
 </html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/fonts.css">
+    <link rel="stylesheet" href="../styles/global.css">
+    <link rel="stylesheet" href="../styles/taxi/main.css">
+</head>
+<body>
+
+    <main id="main">
+        <section class="video-player">
+            <section class="vp-frame">
+                <iframe src="https://www.youtube-nocookie.com/embed/nVxOHAg7bLU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </section>
+        </section>
+
+        <section class="content">
+            <section class="m-header">
+                <a class="toOtherPage" href="../index.html">$-- go back</a>
+            </section>
+            <h2 class="title">Taxi Driver</h2>
+
+            <section class="desc">
+                <blockquote class="desc-explained">
+                    <p class="desc-explained-title">Quick Recap</p>
+                    <p class="desc-explained-body">"Suffering from insomnia, disturbed loner Travis Bickle (Robert De Niro) takes a job as a New York City cabbie, haunting the streets nightly, growing increasingly detached from reality as he dreams of cleaning up the filthy city. When Travis meets pretty campaign worker Betsy (Cybill Shepherd), he becomes obsessed with the idea of saving the world, first plotting to assassinate a presidential candidate, then directing his attentions toward rescuing 12-year-old prostitute Iris (Jodie Foster)." - rottentomatoes.com</p>
+                </blockquote>
+
+                <blockquote class="desc-attr">
+                    <p class="desc-attr-title">After Effects 2021</p>
+                    <p class="desc-attr-title">Google Search</p>
+                    <p class="desc-attr-title">Contribution | In Honor of' Dan Perri</p>
+                </blockquote>
+
+                <section class="m-images">
+                    <p>Backstage</p>
+                    <div class="wrapped">
+                        <div class="mi-wrapper" style="background-image: url('../images/taxi/03.png');"></div>
+                        <div class="mi-wrapper" style="background-image: url('../images/taxi/04.png');"></div>
+                        <div class="mi-wrapper" style="background-image: url('../images/taxi/05.png');"></div>
+                        <div class="mi-wrapper" style="background-image: url('../images/taxi/06.png');"></div>
+                        <div class="mi-wrapper" style="background-image: url('../images/taxi/07.png');"></div>
+                    </div>
+                </section>
+            </section>
+        </section>
+
+        <section class="m-header mobile">
+            <a class="toOtherPage" href="../index.html">$-- go back</a>
+        </section>
+
+        <!-- <section class="cap-crazy">
+            <img exec="
+                let index = 0;
+                let active = false;
+                let timeout;
+                let frames = 8;
+                _this.addEventListener('click', (e) => {
+                    active = !active;
+                    
+                    clearInterval(timeout);
+
+                    if (active) {
+                        timeout = setInterval(() => { 
+                            if (index >= 26) { 
+                                setTimeout(() => {
+                                    index = 0;
+                                }, 1000);
+                            } else {
+                                _this.src = `../images/contact/Artboard ${index}.png`; 
+                                index++; 
+                            }
+                        }, 1000/frames);
+                    }
+                })
+            " src="../images/contact/Artboard 0.png" alt="sequence of images showing contact me">
+        </section> -->
+    </main>
+
+    <div id="grain"></div>
+
+    <!-- <a class="toOtherPage" href="#">not home</a> -->
+
+    <script src="../scripts/reactivity.js"></script>
+    <script src="../scripts/routing.js"></script>
+</body>
+</html>

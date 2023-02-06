@@ -1,0 +1,266 @@
+#main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+::-moz-selection { /* Code for Firefox */
+    color: #ff8412;
+    background: #fff894;
+}
+
+::selection {
+    color: #ff8412;
+    background: #fff894;
+}
+
+body {
+    background-color: #030100;
+}
+
+/*------------------------------------*/
+/*header (go back/return link)*/
+
+.m-header {
+    width: 100%;
+    padding: 1rem 2rem;
+    border-radius: 25px;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background-color: #030303;
+    mix-blend-mode: difference;
+    color: rgb(236, 236, 236);
+    font-size: 1rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.m-header > a {
+    transition: .5s ease;
+}
+
+.m-header > a:hover {
+    font-size: 1.1rem;
+    transition: .5s ease;
+}
+
+.mobile {
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .mobile {
+        display: block;
+    }
+}
+
+/*------------------------------------*/
+/*video-player*/
+
+.video-player {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: .5rem;
+    overflow: hidden;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.video-player > .vp-frame {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.vp-frame > iframe {
+    width: 100%;
+    aspect-ratio: 16/9;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+/*------------------------------------*/
+/*Content Title*/
+
+.content {
+    width: 100%;
+    background-color: #030100;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.title {
+    padding: 10vh 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: "nimbus";
+    text-transform: uppercase;
+    font-size: 15rem;
+    line-height: 13rem;
+    letter-spacing: 20px;
+
+    color: #ff8412;
+    text-shadow: -3px 0 #fff894, 0 3px #fff894, 3px 0 #fff894, 0 -3px #fff894, 3px 3px 12px #ff0d0d75;
+}
+
+@media only screen and (max-width: 1300px) {
+    .title {
+        font-size: 10rem;
+        line-height: 9rem;
+        letter-spacing: 20px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .title {
+        font-size: 5rem;
+        line-height: 5rem;
+        letter-spacing: 20px;
+    }
+}
+
+/*------------------------------------*/
+/*Content Desc*/
+
+.desc {
+    width: 100%;
+    color: white;
+    padding: var(--global-padding);
+    letter-spacing: 1px;
+}
+
+.desc-explained {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0 20vw;
+    margin-bottom: 10vh;
+}
+
+.desc-explained-title {
+    font-family: "nimbus";
+    font-size: 1.5rem;
+    position: relative;
+}
+
+.desc-explained-title::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    width: 20%;
+    height: 2px;
+    background-color: white;
+}
+
+.desc-explained-body {
+    line-height: 1.25rem;
+    opacity: 0.5;
+}
+
+.desc-attr {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 1rem;
+    padding: 1rem 20vw;
+    opacity: 0.5;
+    font-family: "nimbus_bold";
+    letter-spacing: 2px;
+    border-bottom: 2px solid #ffffff50;
+    padding-bottom: 3rem;
+    text-align: center;
+}
+
+@media only screen and (max-width: 1024px) {
+    .desc-attrm .desc-explained {
+        padding: 1rem 10vw;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .desc-attr, .desc-explained {
+        padding: 1rem 0vw;
+    }
+}
+
+/*------------------------------------*/
+/*images at bottom*/
+
+.m-images {
+    margin: 5vh 0 10vh 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    position: relative;
+    border-radius: 5px;
+}
+
+.m-images > p { 
+    display: flex;
+    align-items: center;
+    width: 100%;
+    opacity: 0.5;
+    position: relative;
+}
+
+.m-images > p::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    width: 20%;
+    height: 2px;
+    background-color: white;
+}
+
+.wrapped {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    gap: 1rem;
+}
+
+.mi-wrapper {
+    width: 100%;
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 400px;
+    border-radius: 5px;
+}
+
+@media only screen and (max-width: 1024px) {
+    .wrapped {
+        flex-wrap: wrap;
+    }
+
+    .mi-wrapper {
+        width: 100%;
+        background-size: cover;
+    }
+}
+
+/*------------------------------------*/
+/*this is the fun part*/
+
+.cap-crazy {
+    width: 100%;
+    cursor: pointer;
+}
+
+.cap-crazy > img {
+    width: 100%;
+}

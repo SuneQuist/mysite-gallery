@@ -1,0 +1,146 @@
+.main {
+    width: 100%;
+}
+
+/*------------------------------------*/
+/*header (go back/return link)*/
+
+.m-header {
+    width: 100%;
+    padding: 1rem 2rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: #030303;
+    color: rgb(236, 236, 236);
+    font-size: 1rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.m-header > a {
+    transition: .5s ease;
+}
+
+.m-header > a:hover {
+    font-size: 1.1rem;
+    transition: .5s ease;
+}
+
+/*------------------------------------*/
+/*content*/
+
+.m-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #030303;
+    transition: .5s ease-out
+}
+
+.mc-display {
+    width: 100%;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    transition: .6s cubic-bezier(0.175, 0.885, 0.32, 1.075);
+}
+
+.mc-display:hover, .mc-display:active {
+    height: 550px;
+    transition: .5s cubic-bezier(0.175, 0.885, 0.32, 1.075);
+}
+
+.mc-content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin: 0 10vw 0 40vw;
+    padding: 5vh 0;
+    color: rgb(236, 236, 236);
+    box-shadow: 1px 2px 12px rgba(0, 0, 0, 0, 0.5);
+}
+
+.mc-content > h2 {
+    font-family: "blackletter";
+    font-size: 5rem;
+    margin-bottom: 1.5rem;
+}
+
+@media only screen and (max-width: 1024px) {
+    .mc-content {
+        margin: 0 10vw 0 10vw;
+    }
+}
+
+.mc-content > p {
+    opacity: 0.3;
+    font-size: 1rem;
+    line-height: 1.75rem;
+    font-family: "inter_regular";
+    font-weight: 300;
+}
+
+.mc-content-main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    align-items: flex-start;
+    margin: 0 10vw;
+    padding: 7vh 0;
+    color: white;
+}
+
+.mc-content-main > h2 {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    font-family: "avante_garde";
+    letter-spacing: 2px;
+    font-size: 8vw;
+    text-align: center;
+}
+
+/*------------------------------------*/
+/*images at bottom*/
+
+.m-images {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.mi-wrapper {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 400px;
+}
+
+@media only screen and (max-width: 1024px) {
+    .m-images {
+        height: 100%;
+    }
+
+    .mi-wrapper {
+        width: 100%;
+        background-size: cover;
+    }
+}
